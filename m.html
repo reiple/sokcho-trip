@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#12263a">
+<title>속초 2박 3일 · 모바일</title>
+<style>
+:root{
+  --bg:#f6f1e7;--bg2:#ece4d3;--ink:#12263a;--muted:#5d6b78;--sea:#1f5f7a;--coral:#c9472b;--line:#d6cbb4;--ok:#2f7d4f;--card:#fffdf8;
+  --serif:"Noto Serif KR","Batang","Nanum Myeongjo",serif;
+  --sans:"Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
+  --bar:64px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1b27;--bg2:#182a3a;--ink:#eee6d6;--muted:#9fb0bd;--sea:#7cc0dc;--coral:#ff8a6b;--line:#2b4155;--ok:#6fcf97;--card:#14232f}
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;
+  padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom) + 12px);word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--sea)}
+img{max-width:100%}
+.top{position:sticky;top:0;z-index:5;background:var(--ink);color:#f6f1e7;padding:calc(10px + env(safe-area-inset-top)) 16px 10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.top b{font-family:var(--serif);font-size:16px;letter-spacing:-.01em}
+.top a{color:#f6f1e7;font-size:13px;text-decoration:none;border:1px solid rgba(246,241,231,.5);padding:6px 10px;min-height:32px;display:inline-flex;align-items:center;white-space:nowrap}
+.panel{scroll-margin-top:70px;padding:20px 18px 8px;max-width:640px;margin:0 auto}
+.js .panel{display:none}.js .panel.on{display:block}
+h1{font-family:var(--serif);font-size:30px;line-height:1.25;margin:6px 0 12px;letter-spacing:-.02em}
+h2{font-family:var(--serif);font-size:23px;line-height:1.3;margin:2px 0 6px;letter-spacing:-.01em}
+h3{font-size:15px;color:var(--sea);margin:26px 0 8px;letter-spacing:.02em}
+p{margin:10px 0}
+.kicker{font-size:12px;letter-spacing:.14em;color:var(--coral);font-weight:700}
+.lead{color:var(--muted);font-size:16.5px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--ink);margin:18px 0}
+.facts div{padding:10px 12px;font-size:14.5px;line-height:1.45;border-bottom:1px solid var(--line)}
+.facts div:nth-child(odd){border-right:1px solid var(--line)}
+.facts div:nth-last-child(-n+2){border-bottom:0}
+.facts small{display:block;font-size:11.5px;letter-spacing:.1em;color:var(--muted)}
+figure{margin:18px -18px}
+figure img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--bg2)}
+figcaption{font-size:13px;color:var(--muted);padding:6px 18px 0;line-height:1.5}
+.goal{background:var(--ink);color:#f6f1e7;padding:14px 16px;margin:16px 0;font-size:15.5px;line-height:1.6}
+.goal b{color:#f2b8a7}
+.say{background:var(--bg2);padding:14px 16px;margin:16px 0;font-size:15.5px;line-height:1.6}
+.say small{display:block;font-size:11.5px;letter-spacing:.12em;color:var(--coral);font-weight:700;margin-bottom:2px}
+.warn{border:1.5px solid var(--coral);padding:12px 14px;margin:16px 0;font-size:15px;line-height:1.6}
+.warn b{color:var(--coral)}
+.wx{margin:14px 0;border-top:2px solid var(--ink)}
+.wx div{display:grid;grid-template-columns:70px 1fr auto;gap:8px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.wx b{font-variant-numeric:tabular-nums;color:var(--sea)}
+.wx span{color:var(--muted);font-size:13.5px;text-align:right}
+.tl{list-style:none;margin:14px 0;padding:0;border-top:2px solid var(--ink)}
+.tl li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tl time{font-variant-numeric:tabular-nums;font-weight:700;color:var(--sea);font-size:15px;line-height:1.5;padding-top:1px}
+.tl b{display:block;font-size:17px;line-height:1.45}
+.tl p{margin:3px 0 0;font-size:15px;color:var(--muted);line-height:1.6}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;padding:0 7px;border:1px solid var(--coral);color:var(--coral);margin-left:6px;vertical-align:2px;line-height:1.6}
+.check{list-style:none;padding:0;margin:10px 0}
+.check li{border-bottom:1px solid var(--line)}
+.check label{display:flex;gap:14px;align-items:flex-start;padding:13px 0;min-height:48px;cursor:pointer;font-size:16px;line-height:1.55}
+.check input{width:24px;height:24px;flex:none;margin-top:2px;accent-color:var(--ok)}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+.ver{border:1px solid var(--ink);margin:14px 0}
+.ver>div{padding:14px 16px;font-size:15px;line-height:1.55}
+.ver>div+div{border-top:1px solid var(--ink)}
+.ver h4{margin:0 0 6px;font-size:12.5px;letter-spacing:.1em}
+.ver .y h4{color:var(--ok)}.ver .n h4{color:var(--coral)}
+.ver ul{margin:0;padding-left:1.1em}.ver li{margin:5px 0}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:15px 0;font-weight:700;min-height:48px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;color:var(--coral);font-weight:400}
+details[open] summary::after{content:"−"}
+details .in{padding:0 0 14px;font-size:15.5px}
+pre{background:var(--ink);color:#f6f1e7;padding:12px 14px;overflow-x:auto;font-size:13px;line-height:1.6;margin:10px 0;-webkit-overflow-scrolling:touch}
+code{font-family:Consolas,"D2Coding",monospace}
+.btn{display:flex;align-items:center;justify-content:center;min-height:48px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:700;margin:12px 0;padding:0 16px}
+.credits{font-size:13px;color:var(--muted);line-height:1.6;padding-left:1.1em}
+.credits li{margin:6px 0}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--card);border-top:2px solid var(--ink);display:grid;grid-template-columns:repeat(6,1fr);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:var(--bar);padding:6px 0;text-decoration:none;color:var(--muted);font-size:12.5px;font-weight:700;line-height:1.2}
+nav.tabs a i{font-style:normal;font-family:var(--serif);font-size:19px;color:var(--ink)}
+nav.tabs a.on{color:var(--coral)}
+nav.tabs a.on i{color:var(--coral)}
+nav.tabs a.on{box-shadow:inset 0 3px 0 var(--coral)}
+.nojs-nav{display:none}
+@media (min-width:700px){.panel{padding-top:32px}figure{margin:18px 0}figcaption{padding-left:0}}
+@media (prefers-reduced-motion:no-preference){.panel.on{animation:fade .18s ease-out}@keyframes fade{from{opacity:.4}to{opacity:1}}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+
+<div class="top">
+  <b>속초 2박 3일</b>
+  <a href="index.html?view=pc" id="pcLink">PC 화면</a>
+</div>
+
+<!-- 홈 -->
+<main class="panel on" id="home" data-tab>
+  <div class="kicker">11월 14일(토) ~ 16일(월)</div>
+  <h1>비 오는 속초,<br>리조트에서 노는 법</h1>
+  <p class="lead">날씨를 먼저 보고 일정을 짰습니다. 기본은 롯데리조트 실내 워터파크이고, 비가 그칠 때 해변과 시장을 끼웁니다.</p>
+
+  <div class="facts">
+    <div><small>인원</small>부모 + 만 12세 딸</div>
+    <div><small>이동</small>자차, 토 오후 출발</div>
+    <div><small>숙소</small>롯데리조트 속초</div>
+    <div><small>필수</small>닭강정 · 물회</div>
+  </div>
+
+  <figure><img src="img/oeongchi.jpg" alt="외옹치 해변의 모래사장과 바다" loading="eager"><figcaption>숙소 근처 외옹치 해변. 2018년에 65년 만에 일반에 개방됐습니다.</figcaption></figure>
+
+  <h3>날씨 읽기</h3>
+  <div class="wx">
+    <div><b>토 11/14</b><em style="font-style:normal">이슬비 · 9~14°C</em><span>비 70%</span></div>
+    <div><b>일 11/15</b><em style="font-style:normal">이슬비 · 11~16°C</em><span>비 69%</span></div>
+    <div><b>월 11/16</b><em style="font-style:normal">소나기 · 9~12°C</em><span>비 100%<br>바람 24km/h</span></div>
+  </div>
+  <p style="font-size:14px;color:var(--muted)">Open-Meteo 예보, 11월 9일 조회. 출발 전날 다시 확인하세요. 월요일은 바람이 강해서 야외 탈것은 운행이 중단될 수 있습니다.</p>
+  <div class="say"><small>딸에게 물어보기</small>비가 오면 여행을 망쳤다고들 하죠. 그런데 리조트 여행은 비 오는 날이 더 편할 수 있어요. 왜 그럴까요?</div>
+</main>
+
+<!-- 토 -->
+<main class="panel" id="sat" data-tab>
+  <div class="kicker">DAY 1 · 11/14</div>
+  <h2>토요일: 이동, 입실, 물회</h2>
+  <div class="goal"><b>목표.</b> 무리하지 않고 안전하게 도착하기. 첫날은 이동이 본 게임입니다.</div>
+  <ol class="tl">
+    <li><time>13:00</time><div><b>신도림 출발</b><p>리조트까지 약 200km. 막히지 않으면 2시간 45분, 토요일 오후 정체를 감안해 3시간 반까지 보세요.</p></div></li>
+    <li><time>중간</time><div><b>휴게소에서 쉬기</b><p>비 오는 날 고속도로는 졸음 위험이 큽니다. 운전자 교대나 휴식을 꼭 넣으세요.</p></div></li>
+    <li><time>16:30<br>~17:00</time><div><b>롯데리조트 도착, 체크인</b><p>속초시 대포항길 186. 입실 시간은 예약 확인서를 보세요.</p></div></li>
+    <li><time>18:00</time><div><b>물회 저녁</b><span class="tag">필수</span><p>청초수물회(엑스포로 12-36)가 지도 데이터에서 확인됩니다. 가기 전에 전화로 영업 여부를 확인하세요.</p></div></li>
+    <li><time>20:00</time><div><b>리조트 시설 가볍게 둘러보기</b><p>내일 일정의 예고편입니다. 워터파크 운영 시간을 직접 확인하세요.</p></div></li>
+  </ol>
+  <figure><img src="img/daepo.jpg" alt="대포항의 방파제와 다리" loading="lazy"><figcaption>리조트와 같은 대포동에 있는 대포항. 비가 약하면 저녁 산책 코스로 좋습니다.</figcaption></figure>
+  <div class="say"><small>딸에게 설명하기</small>오늘의 임무는 딱 하나, 무사히 도착해서 물회를 먹는 거예요. 내일이 진짜 놀이 일정입니다.</div>
+</main>
+
+<!-- 일 -->
+<main class="panel" id="sun" data-tab>
+  <div class="kicker">DAY 2 · 11/15</div>
+  <h2>일요일: 리조트를 제대로 쓰는 날</h2>
+  <div class="goal"><b>목표.</b> 비 오는 날 리조트의 장점을 최대한 쓰기. 시설이 중심이고, 시장과 해변은 비가 약한 시간에 끼웁니다.</div>
+  <ol class="tl">
+    <li><time>08:30</time><div><b>조식</b><p>조식 포함 여부와 운영 시간은 숙박 상품마다 다릅니다.</p></div></li>
+    <li><time>10:00</time><div><b>실내 워터파크 1부</b><p>오전에는 사람이 적은 편입니다. 위키백과에 따르면 롯데리조트 속초는 실내 워터파크를 갖추고 있습니다.</p></div></li>
+    <li><time>12:30</time><div><b>점심 + 닭강정</b><span class="tag">필수</span><p>리조트에서 속초관광수산시장(중앙시장)까지 차로 5km, 9분. 만석닭강정은 청초호반로 72 매장이 확인됩니다. 줄이 길 수 있어요.</p></div></li>
+    <li><time>15:00</time><div><b>해변 산책 (비가 약할 때)</b><p>우산 쓰고 20~30분이면 충분합니다. 해 지기 전, 오후 5시 안팎이 마감선입니다.</p></div></li>
+    <li><time>16:00</time><div><b>리조트 시설 2부</b><p>산책으로 식은 몸은 온수 시설로 풉니다.</p></div></li>
+    <li><time>18:30</time><div><b>저녁</b><p>시장 먹거리(오징어순대 등) 또는 리조트 주변 식당.</p></div></li>
+    <li><time>20:30</time><div><b>가족 시간</b><p>숙소에서 쉬거나 시설이 열려 있으면 한 번 더.</p></div></li>
+  </ol>
+
+  <h3>예약 전에 확인할 시설 정보</h3>
+  <p style="font-size:15px;color:var(--muted)">공식 사이트가 동적 페이지라서 운영 시간과 요금은 읽지 못했습니다. 아래를 확인하며 체크하세요.</p>
+  <ul class="check">
+    <li><label><input type="checkbox" id="f1"><span><b>실내 워터파크</b> 운영 시간, 11월 정기 휴장 여부, 투숙객 요금, 12세 이용 조건</span></label></li>
+    <li><label><input type="checkbox" id="f2"><span>스파·사우나·온수 시설 운영 시간, 12세 이용 가능 여부</span></label></li>
+    <li><label><input type="checkbox" id="f3"><span>아이가 즐길 놀이·게임·체험 공간 유무</span></label></li>
+    <li><label><input type="checkbox" id="f4"><span>피트니스, 산책로, 라운지 등 비 오는 날 쓸 시설</span></label></li>
+    <li><label><input type="checkbox" id="f5"><span>조식 포함 여부와 레스토랑 운영 시간</span></label></li>
+    <li><label><input type="checkbox" id="f6"><span>시설별 예약 필요 여부, 투숙객 할인과 입장 제한</span></label></li>
+  </ul>
+
+  <figure><img src="img/sokcho_beach.jpg" alt="속초 해변과 대관람차" loading="lazy"><figcaption>속초해변과 대관람차. 바람이 강한 날은 운행이 중단될 수 있습니다.</figcaption></figure>
+  <figure><img src="img/cablecar.jpg" alt="설악산 케이블카" loading="lazy"><figcaption>설악산 케이블카. 비가 그치고 바람이 약하면 대안이지만 당일 운행 여부를 확인하세요.</figcaption></figure>
+
+  <div class="say"><small>딸과 함께 하는 미션</small>
+    <b>1.</b> 안내 데스크에서 시설 안내서를 받아 가고 싶은 곳 3곳에 별표 치기.<br>
+    <b>2.</b> 운영 시간표를 보고 우리 가족 일정표를 직접 짜 보기.<br>
+    <b>3.</b> 닭강정 줄 서는 시간을 재고, 시간 대비 맛 점수 매기기.
+  </div>
+</main>
+
+<!-- 월 -->
+<main class="panel" id="mon" data-tab>
+  <div class="kicker">DAY 3 · 11/16</div>
+  <h2>월요일: 안전하게 돌아오기</h2>
+  <div class="goal"><b>목표.</b> 비와 바람이 가장 센 날이라 퇴실, 점심, 귀가 세 가지만 합니다.</div>
+  <ol class="tl">
+    <li><time>09:00</time><div><b>조식, 짐 싸기</b><p>젖은 옷과 수건은 비닐봉지에 따로 담습니다.</p></div></li>
+    <li><time>퇴실<br>시간</time><div><b>체크아웃</b><p>마감 시간은 예약 확인서에서 확인하세요.</p></div></li>
+    <li><time>11:30</time><div><b>점심</b><p>시장에서 먹고 닭강정을 포장해 가도 좋습니다.</p></div></li>
+    <li><time>13:00</time><div><b>속초 출발</b><p>월요일 오후는 비교적 한산하지만, 비가 세면 속도를 줄이세요.</p></div></li>
+    <li><time>17:00<br>무렵</time><div><b>귀가</b><p>휴게소 한 번 포함한 예상 시간입니다.</p></div></li>
+  </ol>
+  <div class="warn"><b>안전.</b> 강풍과 폭우가 겹치면 속도를 낮추고 차간 거리를 넉넉히 두세요. 피곤하면 출발을 늦춰도 됩니다.</div>
+</main>
+
+<!-- 먹기 -->
+<main class="panel" id="eat" data-tab>
+  <div class="kicker">MUST EAT</div>
+  <h2>물회와 닭강정</h2>
+
+  <h3>물회 <span class="tag">필수</span></h3>
+  <p>신선한 회를 새콤달콤한 육수에 말아 먹는 요리입니다.</p>
+  <ul class="check" style="list-style:disc;padding-left:1.2em">
+    <li style="border:0"><b>청초수물회</b>: 속초시 조양동 엑스포로 12-36. 지도 데이터에서 확인됩니다.</li>
+    <li style="border:0"><b>봉포머구리집</b>: 지도 데이터에서 찾지 못했습니다. 후보로만 두고 먼저 확인하세요.</li>
+    <li style="border:0">11월에는 메뉴가 바뀌는 식당이 있어 물회 판매 여부를 전화로 확인하세요.</li>
+  </ul>
+  <figure><img src="img/mulhoe.jpg" alt="물회 한 그릇" loading="lazy"><figcaption>물회 예시 사진(특정 식당이 아닙니다).</figcaption></figure>
+
+  <h3>닭강정 <span class="tag">필수</span></h3>
+  <ul class="check" style="list-style:disc;padding-left:1.2em">
+    <li style="border:0"><b>만석닭강정</b>: 속초시 조양동 청초호반로 72 매장이 지도 데이터에서 확인됩니다. 시장 안 매장이 따로 있는지는 확인하지 못했습니다.</li>
+    <li style="border:0">줄이 길다고 알려져 있으니 대기 시간을 여유 있게 잡고 우산을 챙기세요.</li>
+    <li style="border:0">월요일 귀가 길에 한 번 더 사 가는 방법도 있습니다.</li>
+  </ul>
+  <figure><img src="img/mansuk.jpg" alt="포장 상자에 담긴 닭강정" loading="lazy"><figcaption>속초 만석닭강정 포장 사진.</figcaption></figure>
+  <figure><img src="img/market.jpg" alt="속초관광수산시장 입구 간판" loading="lazy"><figcaption>속초관광수산시장(Sokcho Central Market) 입구. 중앙시장이라고도 부릅니다.</figcaption></figure>
+
+  <div class="say"><small>딸에게 설명하기</small>같은 닭강정도 가게마다 맛이 달라요. 두 곳을 비교해서 가족 평점을 매겨 볼까요?</div>
+</main>
+
+<!-- 준비 -->
+<main class="panel" id="prep" data-tab>
+  <div class="kicker">BEFORE YOU GO</div>
+  <h2>출발 전 확인</h2>
+
+  <h3>예약과 운영</h3>
+  <ul class="check">
+    <li><label><input type="checkbox" id="c1"><span>롯데리조트 속초에 전화: 체크인·체크아웃 시간, 시설 운영 시간, 12세 이용 조건</span></label></li>
+    <li><label><input type="checkbox" id="c2"><span>물회 식당에 전화: 영업 시간, 물회 판매 여부, 웨이팅</span></label></li>
+    <li><label><input type="checkbox" id="c3"><span>월요일 교외체험학습 제출 완료</span></label></li>
+  </ul>
+  <h3>짐과 차량</h3>
+  <ul class="check">
+    <li><label><input type="checkbox" id="c4"><span>우산 3개 또는 방수 재킷, 여벌 양말</span></label></li>
+    <li><label><input type="checkbox" id="c5"><span>수영복·수건·슬리퍼 (워터파크 이용 조건 확인 후)</span></label></li>
+    <li><label><input type="checkbox" id="c6"><span>차량 점검: 타이어 공기압, 와이퍼, 워셔액, 연료</span></label></li>
+    <li><label><input type="checkbox" id="c7"><span>출발 전날 예보 다시 확인</span></label></li>
+  </ul>
+
+  <h3>이번에 확인한 것과 못한 것</h3>
+  <div class="ver">
+    <div class="y"><h4>확인됨</h4><ul>
+      <li>롯데리조트 속초: 2017년 개관, 9층 392실, 실내 워터파크 보유 (위키백과)</li>
+      <li>주소: 속초시 대포항길 186 (OpenStreetMap)</li>
+      <li>신도림역에서 약 200km, 약 2시간 45분 (경로 계산)</li>
+      <li>리조트에서 시장까지 차로 5.3km, 9분</li>
+      <li>청초수물회, 만석닭강정 청초호반로 매장 위치</li>
+      <li>날씨 예보 (11월 9일 조회)</li>
+    </ul></div>
+    <div class="n"><h4>확인 못함</h4><ul>
+      <li>워터파크 운영 시간, 요금, 휴장일</li>
+      <li>스파, 키즈 시설 등 그 외 부대시설</li>
+      <li>봉포머구리집의 위치와 영업 여부</li>
+      <li>식당 영업 시간과 휴무일</li>
+      <li>케이블카와 대관람차의 당일 운행 여부</li>
+    </ul></div>
+  </div>
+
+  <h3>더 보기</h3>
+  <details><summary>Hermes로 계획 수정하기</summary><div class="in">
+    <p>동행도 Hermes로 이 페이지를 고칠 수 있습니다. PC에서 진행하세요.</p>
+    <pre><code>gh repo clone reiple/sokcho-trip
+cd sokcho-trip
+hermes</code></pre>
+    <p>Hermes에게 "일요일 점심 메뉴를 바꿔줘"처럼 말로 요청한 뒤 아래로 반영합니다.</p>
+    <pre><code>git add -A
+git commit -m "일정 수정"
+git push</code></pre>
+    <p>직접 반영 권한이 없으면 포크 후 <code>gh pr create</code>로 수정 요청을 보냅니다. 주소, 연락처, 예약번호 같은 개인정보는 넣지 마세요. 자세한 설명은 PC 화면 7단원에 있습니다.</p>
+    <a class="btn" href="index.html?view=pc#l7">PC 화면의 설명 보기</a>
+  </div></details>
+  <details><summary>사진 출처</summary><div class="in">
+    <p style="font-size:14px;color:var(--muted)">모든 사진은 위키미디어 공용에서 가져왔습니다. 물회와 닭강정 사진은 특정 식당의 현재 모습이 아닙니다.</p>
+    <ul class="credits">
+      <li>외옹치 해변: Mobius6, CC BY-SA 4.0</li>
+      <li>대포항: Bernard Gagnon, CC0</li>
+      <li>속초해변: Mobius6, CC BY-SA 4.0</li>
+      <li>설악산 케이블카: Bernard Gagnon, CC0</li>
+      <li>물회: 대경라이프, CC BY-SA 4.0</li>
+      <li>닭강정(만석): LR0725, CC BY-SA 4.0</li>
+      <li>속초관광수산시장: Bernard Gagnon, CC0</li>
+    </ul>
+    <p style="font-size:13px;color:var(--muted)">파일별 링크는 <a href="index.html?view=pc#credits">PC 화면 하단</a>에 있습니다.</p>
+  </div></details>
+</main>
+
+<nav class="tabs" aria-label="메뉴">
+  <a href="#home" data-go="home"><i>홈</i>개요</a>
+  <a href="#sat" data-go="sat"><i>토</i>11/14</a>
+  <a href="#sun" data-go="sun"><i>일</i>11/15</a>
+  <a href="#mon" data-go="mon"><i>월</i>11/16</a>
+  <a href="#eat" data-go="eat"><i>식</i>먹거리</a>
+  <a href="#prep" data-go="prep"><i>준</i>확인</a>
+</nav>
+
+<script>
+(function(){
+  // 보기 방식 기억: 모바일 화면을 직접 골랐다는 표시를 남겨 자동 이동이 되돌리지 않게 함
+  try{ sessionStorage.setItem('sk_view','m'); }catch(e){}
+
+  var panels=[].slice.call(document.querySelectorAll('[data-tab]'));
+  var tabs=[].slice.call(document.querySelectorAll('nav.tabs a'));
+  function show(id){
+    if(!document.getElementById(id)) id='home';
+    panels.forEach(function(p){ p.classList.toggle('on',p.id===id); });
+    tabs.forEach(function(a){ a.classList.toggle('on',a.getAttribute('data-go')===id); });
+    window.scrollTo(0,0);
+  }
+  function fromHash(){ show((location.hash||'#home').slice(1)); }
+  window.addEventListener('hashchange',fromHash);
+  window.addEventListener('load',function(){ if(!location.hash||document.querySelector('.panel.on')) window.scrollTo(0,0); });
+  fromHash();
+
+  // 오늘이 여행일이면 해당 요일 탭으로 (해시가 없을 때만)
+  if(!location.hash){
+    var d=new Date(), m=d.getMonth()+1, dd=d.getDate();
+    if(d.getFullYear()===2026 && m===11){
+      var map={14:'sat',15:'sun',16:'mon'};
+      if(map[dd]) show(map[dd]);
+    }
+  }
+
+  // 체크 상태 저장 (PC 화면과 같은 키를 써서 같은 기기에서는 함께 유지)
+  [].forEach.call(document.querySelectorAll('input[type=checkbox]'),function(b){
+    try{ if(localStorage.getItem('sk_'+b.id)==='1') b.checked=true; }catch(e){}
+    b.addEventListener('change',function(){
+      try{ localStorage.setItem('sk_'+b.id,b.checked?'1':'0'); }catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -3,6 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex,nofollow">
+<script>
+// 접속 기기에 맞춰 화면 선택: 휴대폰이면 모바일 페이지로 이동, ?view=pc 로 직접 고르면 유지
+(function(){
+  try{
+    var q=location.search.match(/[?&]view=(pc|m)/), v=q&&q[1], ss=window.sessionStorage;
+    if(v==='pc'){ ss.setItem('sk_view','pc'); return; }
+    if(v==='m'){ location.replace('m.html'+location.hash); return; }
+    if(ss.getItem('sk_view')==='pc') return;
+    var ua=/Android.+Mobile|iPhone|iPod|Windows Phone|Mobile.+Firefox/i.test(navigator.userAgent);
+    var small=window.matchMedia&&matchMedia('(max-width:700px) and (pointer:coarse)').matches;
+    if(ua||small) location.replace('m.html'+location.hash);
+  }catch(e){}
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>속초 롯데리조트 2박 3일 — 가족 여행 강의안</title>
 <style>
@@ -112,6 +126,7 @@ ol.steps>li>div{min-width:0;flex:1}
 <div class="wrap">
 <nav aria-label="목차">
   <div class="brand">속초 2박 3일<br>가족 여행 강의안</div>
+  <a href="m.html" style="display:inline-block;margin:-8px 0 16px;font-size:13px">모바일 화면 &rarr;</a>
   <ol>
     <li><a href="#l0"><b>0</b>개요</a></li>
     <li><a href="#l1"><b>1</b>날씨 읽기</a></li>
